@@ -1,0 +1,180 @@
+/* Webpage Style Section */
+.Screen{
+    background-color: #28282B;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Navigation Area Styling */
+
+.Navigation-bar , navbar{
+    background-color: #28282B;
+}
+
+.Logo{
+    padding-left: 28px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Navigation-bar li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#nav-content{
+    font-size: 16px;
+    font-family: 'Miltonian Tattoo', cursive;
+    font-weight: bolder;
+    color: white;
+}
+
+#nav-content:hover{
+    font-size: 18px;
+    color: rgb(130, 226, 130);
+}
+
+/* Home Section Styling */
+
+#About-outer , #About-inner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Details{
+    display: flex;
+    align-items: center;
+}
+
+.Details h1, h2{
+    font-family: 'Rubik Iso', cursive;
+    color: rgb(66, 163, 66);
+
+}
+
+.Details p{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+.Details a{
+    text-decoration: none;
+    font-size: 32px;
+    padding: 20px 20px 20px 0px;
+    color: black;
+}
+
+.Details .linkedin:hover{
+    color: #0072b1;
+}
+
+/* Skills Section Styling */
+
+#Skills{
+    padding: 20px;
+}
+
+#cards-block{
+    padding: 20px;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skill-card-outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skill-card{
+    width: 350px;
+    height: 280px;
+    padding: 10px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-img{
+    width: 100px;
+}
+
+/* Projects Section Styling */
+
+#Projects{
+    padding: 20px;
+}
+
+#projects-block{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-link{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Contact Section Styling */
+
+#Contact{
+    padding: 16px;
+}
+
+form{
+    padding: 20px;
+    height: 100%;
+}
+
+/* Footer Section Styling */
+
+footer{
+    background-color: darkgray;
+    margin: 0px;
+}
+
+.foot{
+    padding: 5px;
+    text-align: center;
+}
+
+.foot a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Media Queries */
+
+@Media only screen and (max-width: 990px){
+    .Navigation-bar ul, .Details, #Skills h2 , #Projects h2 , #Contact h2 {
+        text-align: center;
+    }
+
+    #Contact div{
+        text-align: center;
+    }
+
+}
+
+@Media only screen and (max-width: 768px){
+    .GIF{
+        height: 50%;
+        width: 50%;
+    }
+    #Gif-Img-Outer{
+        display: flex;
+        justify-content: center;
+    }
+}
