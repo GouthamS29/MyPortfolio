@@ -1,21 +1,29 @@
 <html>
     <head>
+        <!-- External Links -->
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@100&family=Rubik+Iso&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Miltonian&family=Miltonian+Tattoo&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Monoton&family=Zeyada&display=swap" rel="stylesheet">
     </head>
+    <!-- Body Of the HTML -->
     <body class="Screen">
+        <!-- Header Tag For Navigation Bar -->
         <header class="Navigation-bar">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                  <a class="navbar-brand col-8 Logo" href="#"><img src="Images/Logo-G.png" class="Logo-G"></a>
+                  <!-- Webpage Logo -->
+                  <a class="navbar-brand col-6 Logo" href="#">
+                    <img src="Images/Logo-G.png" class="Logo-G">
+                  </a>
+                  <!-- Hamburger Button -->
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon btn btn-light"></span>
                   </button>
-                  <div class="collapse col-4 navbar-collapse" id="navbarSupportedContent">
+                  <div class="collapse col-6 navbar-collapse" id="navbarSupportedContent" >
+                    <!-- Navigation Items in Navigation Bar -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
                         <a class="nav-link active" id="nav-content" aria-current="page" href="#Home">Home</a>
@@ -29,29 +37,39 @@
                       <li class="nav-item">
                         <a class="nav-link" id="nav-content" href="#Contact">Contact</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="nav-content" href="https://drive.google.com/file/d/1_IR-iK-bWmJR0BjcONTjNYvKJu_6VBbI/view?usp=sharing" download>Resume <i class="fa-solid fa-file-arrow-down"></i></a>
+                      </li>
                     </ul>
                   </div>
                 </div>
             </nav>
         </header>
+        <!-- Main Section of the Webpage -->
         <main>
-            <!-- Home Section -->
+            <!-- Home Section / Spotlight Section -->
             <section class="home" id="Home">
-                <div class="card mb-3" id="About-outer">
+                <div class="card container mb-3" id="About-outer">
                     <div class="row g-2 d-flex flex-wrap" id="About-inner">
-                        <div class="col-md-8 order-1 Details">
+                        <div class="col-md-8 col-sm-6 order-1 Details">
                             <!-- Intro Details -->
                             <div class="card-body">
                                 <h3 class="card-subtitle mb-2 text-body-secondary">Hey There , This is</h3>
                                 <h1 class="card-title">SAMBARAJU GOUTHAM</h1>
                                 <h2 class="card-title">Frontend Developer</h2>
                                 <p class="card-text">I love developing an interactive and entertaining frontend applications for my fellow viewers.</p>
-                                <a href="https://www.linkedin.com/in/goutham-sambaraju-2b4b15184/" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="https://github.com/GouthamS29" class="github"><i class="fa-brands fa-github"></i></a>
+                                <div>
+                                    <ul type="none" style="display: flex;">
+                                        <li class="facebook-outline"><a href="https://www.facebook.com/sambaraju.goutham" class="facebook"><i class="fa-brands fa-facebook fa-beat"></i></a></li>
+                                        <li class="linkedin-outline"><a href="https://www.linkedin.com/in/goutham-sambaraju-2b4b15184/" class="linkedin"><i class="fa-brands fa-linkedin-in fa-beat"></i></a></li>
+                                        <li class="github-outline"><a href="https://github.com/GouthamS29" class="github"><i class="fa-brands fa-github fa-beat"></i></a></li>
+                                        <li class="instagram-outline"><a href="https://www.instagram.com/goutham_29_/" class="instagram"><i class="fa-brands fa-instagram fa-beat"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <!-- Profile Picture -->
-                        <div class="col-md-4 order-2" id="Gif-Img-Outer">
+                        <div class="col-md-4 col-sm-6 order-2" id="Gif-Img-Outer">
                             <img src="Images/Working.gif" class="img-fluid rounded-start GIF" style="max-width: 100%;" alt="Working Image">
                         </div>
                     </div>
@@ -61,7 +79,7 @@
             <!-- Skills Section -->
             <section class="container skills" id="Skills">
                 <h2>My Techie Expertise</h2>
-                <div class="row row-cols-1 row-cols-md-2 g-2 d-flex flex-wrap" id="cards-block">
+                <div class="row row-cols-1 row-cols-md-2 g-2 d-flex flex-wrap" id="skills-block">
                     <div class="col p-2" id="skill-card-outer">
                         <div class="card border-dark mb-4 HTML" id="skill-card">
                             <img src="Images/HTML5.png" class="card-img-top" id="card-img" alt="HTML5 Logo">
@@ -100,7 +118,7 @@
             <!-- Projects Section -->
             <section class="container projects" id="Projects">
                 <h2>Projects</h2>
-                <div class="row row-cols-1 row-cols-md-2 g-4" id="projects-block">
+                <div class="row row-cols-1 row-cols-lg-2 row-cols-md-1 row-cols-sm-1  g-4" id="projects-block">
                     <div class="col">
                       <div class="card">
                         <a href="https://sambaraju-goutham-profile.netlify.app/" class="project-link">
@@ -129,47 +147,56 @@
             <!-- Contact Section -->
             <section class="container contact" id="Contact">
                 <h2>Contact Me</h2>
-                <form class="row" id="Contact-form">
-                    <div class="col-6">
-                        <label for="FirstName" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="FirstName" placeholder="First Name">
-                    </div>
-                    <div class="col-6">
-                        <label for="LastName" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="LastName" placeholder="Last Name">
-                    </div>
-                    <div class="col-6">
-                      <label for="EmailId" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="EmailId" placeholder="Email Address">
-                    </div>
-                    <div class="col-6">
-                      <label for="phone" class="form-label">Mobile Number</label>
-                      <input type="tel" class="form-control" id="phone" placeholder="+91">
-                    </div>
-                    <div class="col-6">
-                      <label for="inputCity" class="form-label">City</label>
-                      <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="col-6">
-                      <label for="inputState" class="form-label">State</label>
-                      <select id="inputState" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>Telangana</option>
-                        <option>Andhra Pradesh</option>
-                        <option>Karnataka</option>
-                        <option>Tamil Nadu</option>
-                        <option>Kerala</option>
-                        <option>Maharastra</option>
-                      </select>
-                    </div>
-                    <div class="col-8">
-                        <label for="CollabDetails" class="form-label">Please Enter the details regarding the work</label>
-                        <textarea class="form-control" id="CollabDetails" rows="3"></textarea>
+                <div class="container">
+                  <div class="row row-cols-2 row-cols-lg-2 row-cols-md-1 row-cols-sm-1  g-4 d-flex flex-wrap">
+                    <div class="col">
+                      <div class="card" style="height: 100%;">
+                        <div class="card-body" style="padding: 20px;">
+                          <h1 class="card-title">Lets Get In Touch</h5>
+                          <p class="card-text">let us collab and build some <span>Interesting !!</span> Stuff.</p>
+                          <a href="mailto:sambarajugoutham1994@gmail.com" class="btn btn-outline-secondary">
+                            <p>Dop a Mail <i class="fa-regular fa-envelope"></i></p>
+                          </a>
+                          <div style="display: flex; align-items:center; justify-content:center">
+                            <img src="Images/Contact.jpg" height="60%" width="60%">
+                          </div>
+                        </div>
                       </div>
-                    <div class="col-6">
-                      <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
-                </form>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-body">
+                          <form class="row g-3" id="Contact-form">
+                              <div class="col-12" id="form-element-box">
+                                  <label for="FirstName" class="form-label">First Name</label>
+                                  <input type="text" class="form-control" id="FirstName" placeholder="First Name">
+                              </div>
+                              <div class="col-12" id="form-element-box">
+                                  <label for="LastName" class="form-label">Last Name</label>
+                                  <input type="text" class="form-control" id="LastName" placeholder="Last Name">
+                              </div>
+                              <div class="col-12" id="form-element-box">
+                                <label for="EmailId" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="EmailId" placeholder="Email Address">
+                              </div>
+                              <div class="col-12" id="form-element-box">
+                                <label for="phone" class="form-label">Mobile Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="+91">
+                              </div>
+                              <div class="col-12" id="form-element-box">
+                                  <label for="CollabDetails" class="form-label">Please Enter Your Message Here !</label>
+                                  <textarea class="form-control" id="CollabDetails" rows="3"></textarea>
+                              </div>
+                              <div class="col-12" id="form-button-outer" style="display: flex; justify-content:center">
+                                <button type="submit" class="btn btn-outline-success">Submit <i class="fa-regular fa-paper-plane fa-shake"></i></button>
+                              </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
             </section>
         </main>
         <footer>

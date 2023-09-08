@@ -1,44 +1,74 @@
 /* Webpage Style Section */
+
 .Screen{
-    background-color: #28282B;
+    background: radial-gradient(circle at -4% -12.9%, rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%);
     color: white;
     overflow-x: hidden;
 }
 
-/* Navigation Area Styling */
-
-.Navigation-bar , navbar{
-    background-color: #28282B;
-}
+/*-----------------------------------  Navigation Area Styling ----------------------------------- */
 
 .Logo{
-    padding-left: 28px;
+    padding-left: 120px;
 }
 
-ul{
+.Logo-G{
+    animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+}
+
+.Navigation-bar ul{
     list-style: none;
     display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
     justify-content: space-evenly;
+    padding: 0px 10px;
 }
 
+
 .Navigation-bar li{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 #nav-content{
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Miltonian Tattoo', cursive;
     font-weight: bolder;
     color: white;
 }
 
 #nav-content:hover{
-    font-size: 18px;
+    font-size: 20px;
     color: rgb(130, 226, 130);
 }
 
-/* Home Section Styling */
+
+/*----------------------------------- Home Section Styling -----------------------------------  */
 
 #About-outer , #About-inner{
     height: 100%;
@@ -62,24 +92,61 @@ ul{
     font-size: 20px;
 }
 
+/* Social Media Icons  */
+
+.Details li{
+    height: 50px;
+    width: 50px;
+    margin: 20px 40px 20px 0px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
 .Details a{
     text-decoration: none;
-    font-size: 32px;
-    padding: 20px 20px 20px 0px;
+    font-size: 26px;
     color: black;
+}
+
+.Details .facebook:hover{
+    color: #1877F2;
+}
+.facebook-outline:hover{
+    border: 2px solid #1877F2;
 }
 
 .Details .linkedin:hover{
     color: #0072b1;
 }
+.linkedin-outline:hover{
+    border: 2px solid #0072b1;
+}
 
-/* Skills Section Styling */
+.Details .github:hover{
+    color: #6d2687;
+}
+.github-outline:hover{
+    border: 2px solid #6d2687;
+}
+
+.Details .instagram:hover{
+    color: #E4405F;
+}
+.instagram-outline:hover{
+    border: 2px solid #E4405F;
+
+}
+
+/*-----------------------------------  Skills Section Styling ----------------------------------- */
 
 #Skills{
     padding: 20px;
 }
 
-#cards-block{
+#skills-block{
     padding: 20px;
     position: static;
     display: flex;
@@ -104,10 +171,10 @@ ul{
 }
 
 #card-img{
-    width: 100px;
+    width: 30%;
 }
 
-/* Projects Section Styling */
+/*-----------------------------------  Projects Section Styling ----------------------------------- */
 
 #Projects{
     padding: 20px;
@@ -127,10 +194,25 @@ ul{
 }
 
 
-/* Contact Section Styling */
+/*-----------------------------------  Contact Section Styling ----------------------------------- */
 
 #Contact{
     padding: 16px;
+}
+
+#Contact h1{
+    font-family: 'Black Ops One', cursive;
+    font-size: 48px;
+}
+
+#Contact p{
+    font-family: 'Zeyada', cursive;
+    font-size: 24px;
+}
+
+#Contact span{
+    font-family: 'Monoton', cursive;
+    color: rgb(66, 163, 66);
 }
 
 form{
@@ -138,7 +220,8 @@ form{
     height: 100%;
 }
 
-/* Footer Section Styling */
+
+/*----------------------------------- Footer Section Styling -----------------------------------*/
 
 footer{
     background-color: darkgray;
@@ -155,15 +238,37 @@ footer{
     color: white;
 }
 
-/* Media Queries */
+/*----------------------------------- Media Queries -----------------------------------*/
 
 @Media only screen and (max-width: 990px){
     .Navigation-bar ul, .Details, #Skills h2 , #Projects h2 , #Contact h2 {
         text-align: center;
     }
 
-    #Contact div{
-        text-align: center;
+    .Details ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Contact #form-button-outer{
+        padding: 10px;
+    }
+
+    #About-outer , #About-inner{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #form-element-box{
+        height: 100px;
+    }
+
+    #contact-form{
+        height: auto;
     }
 
 }
